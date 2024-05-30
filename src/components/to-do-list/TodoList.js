@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './TodoList.css';
+import './TodoList.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
-function TodoList() {
+export default function TodoList() {
   // State to store the list of todos
   const [todos, setTodos] = useState([]);
   // State to store the current todo input
@@ -67,5 +67,3 @@ function TodoList() {
     </div>
   );
 }
-
-export default TodoList;
