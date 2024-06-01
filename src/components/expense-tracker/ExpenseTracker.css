@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.expense-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  padding: 40px;
+  position: relative;
+}
+
+.light-mode {
+  background-color: #f2ffff;
+  color: #1a1a1a;
+}
+
+.dark-mode {
+  background-color: #0d3f62;
+  color: #f0f4f8;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+form {
+  margin: 30px 0;
+}
+
+input {
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 20px 40px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Individual expense item styles */
+.expense-item {
+  margin: 30px auto; /* Increased margin for expense items */
+  padding: 20px; /* Increased padding for expense items */
+  width: 80%;
+  max-width: 600px; /* Increased maximum width for expense items */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Dark mode styles for expense items */
+.dark-mode .expense-item {
+  background-color: #555;
+}
+
+/* Hover effect for expense items */
+.expense-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Animation for changing background color of expense items */
+.expense-item {
+  animation: color-change 5s infinite alternate;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #f1c40f; /* Warm shade */
+  }
+}
+
+/* Animation for changing background color of expense items in dark mode */
+.dark-mode .expense-item {
+  animation: color-change-dark 5s infinite alternate;
+}
+
+@keyframes color-change-dark {
+  0% {
+    background-color: #555;
+  }
+  100% {
+    background-color: #3498db; /* Cooler shade */
+  }
+}
