@@ -1,0 +1,95 @@
+/* Modal overlay */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Box shadow */
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+}
+
+/* Close icon */
+.close-modal-icon {
+  cursor: pointer;
+  font-size: 24px;
+  float: right;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.close-modal-icon:hover {
+  color: red;
+}
+
+/* Header */
+.header {
+  padding: 10px 16px;
+  background-color: #5cb85c;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Body */
+.body {
+  padding: 20px 16px;
+  height: auto; /* Allow content to dictate height */
+}
+
+/* Footer */
+.footer {
+  padding: 10px 16px;
+  background-color: #5cb85c;
+  color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-align: center;
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+@keyframes animateModal {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

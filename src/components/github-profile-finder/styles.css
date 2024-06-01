@@ -1,0 +1,102 @@
+.github-profile-container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-wrapper input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.input-wrapper input:focus {
+  border-color: #00f4ec;
+  outline: none;
+}
+
+.input-wrapper button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.input-wrapper button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.user {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  height: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.name-container a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.name-container a:hover {
+  color: #0056b3;
+}
+
+.name-container p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.profile-info div {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-info div p {
+  margin: 5px 0;
+}
