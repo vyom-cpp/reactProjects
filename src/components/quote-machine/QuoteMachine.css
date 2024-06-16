@@ -1,0 +1,83 @@
+/* src/components/quote-machine/QuoteMachine.css */
+body {
+  transition: background-color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  min-height: 300px; /* Set a minimum height */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+#text {
+  font-size: 1.8em;
+  margin: 20px 0;
+  font-weight: bold;
+  transition: color 0.5s ease;
+}
+
+#author {
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-style: italic;
+  transition: color 0.5s ease;
+}
+
+#new-quote {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#new-quote:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+#tweet-quote {
+  color: white;
+  text-decoration: none;
+  background-color: #1da1f2;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+#tweet-quote:hover {
+  background-color: #0d8be3;
+  transform: scale(1.05);
+}
+
+h2, p, button, a {
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
